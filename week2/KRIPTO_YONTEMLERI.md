@@ -1,4 +1,4 @@
-# Kriptografi Yöntemleri – Kısa Özet
+# Kriptografi Yöntemleri
 
 **Hazırlayan:** Tolgahan Keleş
 
@@ -60,10 +60,3 @@ yani özetten asıl veri geri elde edilemez. Verinin değişip değişmediğini 
 - **Dijital imza (RSA, ECDSA, Ed25519):** Gönderen mesajı gizli anahtarıyla imzalar, herkes
   açık anahtarla doğrulayabilir. Örneğin yer istasyonundan gelen komutların veya bir yazılım
   güncellemesinin gerçekliğini kanıtlamak için kullanılır.
-
-## İHA Haberleşmesi Açısından Sonuç
-
-Pratikte bu yöntemler birlikte kullanılır: **ECDH** ile ortak anahtar üretilir, veri
-**AES-GCM** ile hem şifrelenir hem doğrulanır, her pakete bir sayaç/nonce eklenerek
-tekrar oynatma (replay) saldırıları engellenir. Derste kullanılan örnekteki AES-128 ECB yalnızca
-şifrelemenin temel mantığını göstermek içindir.
